@@ -8,15 +8,13 @@ import {
 
 const router = express.Router();
 
-// add a todo
+// Create a todo
 router.post("/", addTodo);
-
-
-// get todos
+// Get todos
 router.get("/", getTodos);
-// update a todo
+// Update a todo
 router.put("/:id", updateTodo);
-// remove a todo
+// Delete a todo
 router.delete("/:id", deleteTodo);
 
 export default router;

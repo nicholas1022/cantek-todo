@@ -6,6 +6,6 @@ const router = express.Router();
 router.use("/todos", todoRoutes);
 
 router.use("/", function(req, res) {
-    res.send("Hello")
+    res.send("This is a todo app server.")
 })
 export default router;
