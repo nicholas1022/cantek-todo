@@ -32,7 +32,8 @@ export const getTodos = async (req, res) => {
 export const updateTodo = async (req, res) => {
   const requestId = req.params.id;
   console.log(`requestId :: ${requestId}`);
-  console.log(`body :: ${req.body}`);
+  console.log(`Updating Task :: ${req.body.task}`);
+  console.log(`Updating Status :: ${req.body.status}`);
 
   try {
     console.log(`Updating todo`);
